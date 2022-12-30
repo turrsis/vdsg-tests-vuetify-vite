@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app v-designer.true>
     <default-view />
   </v-app>
 </template>

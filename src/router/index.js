@@ -1,6 +1,6 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
-
+import testsRoutes from '../../.designer-tests/routes.js';
 const routes = [
   {
     path: '/',
@@ -16,7 +16,7 @@ const routes = [
       },
     ],
   },
-]
+].concat(testsRoutes)
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

@@ -6,12 +6,15 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
+// Designer injection
+import { configureSlaveConfig, configureVue } from 'vdsg-server-common'
+
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(await configureSlaveConfig({
   plugins: [
-    vue({ 
+    vue(configureVue({
       template: { transformAssetUrls }
-    }),
+    })),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
     vuetify({
       autoImport: true,
@@ -35,4 +38,4 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-})
+}))
