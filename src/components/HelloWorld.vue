@@ -1,6 +1,7 @@
 <template>
     <v-container v-designer.true class="fill-height">
         <v-responsive class="d-flex align-center text-center fill-height">
+            <v-btn icon="mdi mdi-heart"/>
             <v-img contain height="300" src="@/assets/logo.svg"/>
             <div class="text-body-2 font-weight-light mb-n1">
                 Welcome to

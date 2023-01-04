@@ -4,8 +4,8 @@ node_modules
 
 # common designer ui tests
 .designer-tests
-# common designer history snapshots
-.designer-history
+# common designer history savePoints
+.designer-save-points
 
 # local env files
 .env.local
