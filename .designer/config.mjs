@@ -1,10 +1,14 @@
 export default {
     key: 'vdsg-tests-vuetify-vite',
     label: 'vuetify tests vite',
-    tests: {
-        uiSpecsPath: '.designer-tests/.spec',
+    app: {
+        tests: {
+            uiSpecsPath: '.designer-tests/.spec',
+        },
+        router: {
+            entryPoint: 'src/plugins/index.js',
+        },
     },
-    routesEntryPoint: 'src/plugins/index.js',
     originhost: 'http://localhost:8080',
     server: {
         host: 'localhost',
