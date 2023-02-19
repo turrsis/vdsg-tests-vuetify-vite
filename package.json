@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "postinstall": "call ..\\vdsg-tests-vuecli\\link-tests.bat"
+    "postinstall": "call ..\\..\\slaves-tests\\vdsg-tests-vuecli\\link-tests.bat"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
