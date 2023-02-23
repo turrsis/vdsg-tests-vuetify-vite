@@ -6,6 +6,7 @@ node_modules
 .designer-tests
 # common designer history savePoints
 .designer-save-points
+vite.config.js.timestamp-*
 
 # local env files
 .env.local
