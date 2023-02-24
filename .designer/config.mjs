@@ -5,6 +5,9 @@ export default {
         tests: {
             uiSpecsPath: '.designer-tests/.spec',
         },
+        pages: {
+            pathPrefix: 'src/views/',
+        },
         router: {
             entryPoint: 'src/plugins/index.js',
         },
