@@ -10,7 +10,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { configureSlaveConfig, configureVue } from 'vdsg-server-common'
 
 // https://vitejs.dev/config/
-export default defineConfig(await configureSlaveConfig({
+let viteConf = await configureSlaveConfig({
   plugins: [
     vue(configureVue({
       template: { transformAssetUrls }
@@ -38,4 +38,6 @@ export default defineConfig(await configureSlaveConfig({
   server: {
     port: 3000,
   },
-}))
+})
+console.log('viteConf', viteConf)
+export default defineConfig(viteConf)
