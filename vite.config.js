@@ -39,5 +39,5 @@ let viteConf = await configureSlaveConfig({
     port: 3000,
   },
 })
-console.log('viteConf', viteConf)
+//console.log('viteConf', viteConf)
 export default defineConfig(viteConf)
