@@ -27,6 +27,7 @@
     "../../repo/vdsg-slave",
     "../../repo/vdsg-common",
     "../../repo/vdsg-server-common",
+    "../../repo/vdsg-code-source",
     "../../meta/vdsg-metadata-tests",
     "../../meta/vdsg-metadata-configs",
     "../../meta/vdsg-metadata-vuetify"
