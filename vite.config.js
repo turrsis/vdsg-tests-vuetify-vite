@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // Utilities
-import { defineConfig } from 'vite'
+import { defineConfig, searchForWorkspaceRoot } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
 // Designer injection
@@ -38,6 +38,8 @@ let viteConf = await configureSlaveConfig({
   server: {
     port: 3000,
   },
+}, {
+  searchForWorkspaceRoot: searchForWorkspaceRoot
 })
-//console.log('viteConf', viteConf)
+
 export default defineConfig(viteConf)
